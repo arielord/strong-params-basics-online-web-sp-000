@@ -35,7 +35,7 @@ class PostsController < ApplicationController
   # depending on the controller action. This
   # should come after the other methods
    
-  def post_params(*args)
-    params.require(:post).permit(*args)
+  def post_params(*kwargs)
+    params.require(:post).permit(*kwargs)
   end
 end
